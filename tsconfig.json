@@ -1,0 +1,36 @@
+{
+  "extends": "./node_modules/gts/tsconfig-google.json",
+  "compileOnSave": true,
+  "compilerOptions": {
+    "target": "es2015",
+    "rootDir": ".",
+    "outDir": "./dist/",
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "inlineSources": true,
+    "typeRoots": [
+      "node_modules/@types",
+      "src/typings/*"
+    ],
+    "lib": [
+      "es2016",
+      "dom"
+    ]
+  },
+  "include": [
+    "src/*.ts",
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+  "IGNORED_ARCHIVE": [
+    "test/*.ts",
+    "test/**/*.ts",
+    "test/*.json",
+    "test/**/*.json"
+  ]
+}

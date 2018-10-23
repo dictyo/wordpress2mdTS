@@ -1,0 +1,13 @@
+---
+layout: page
+id: {{id}}
+name: {{name}}
+title: {{title}}
+author: {{author}}
+teaser: {{teaser}}
+pubDate: {{pubDate}}
+categories: {{#categories}}{{.}}, {{/categories}}   {{!category domain="category"}}
+tags: {{#tags}}{{.}}, {{/tags}}   {{!category domain="post_tag"}}
+slug: {{{slug}}}          {{!link}}
+---
+{{{content}}}
